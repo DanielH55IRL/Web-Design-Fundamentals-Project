@@ -1,0 +1,155 @@
+header{
+    
+    border-bottom: 1px solid black;
+    font-family: Verdana;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+#active{
+    background-color: #FCEE43;
+}
+
+#logo_pic{
+    width: 40%;
+    height: 100px;
+    float: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+
+#main_content{
+    font-family: Verdana;
+    color: black; 
+    position: relative;
+    min-height: 50vh;
+}
+
+#main_content h2{
+    font-weight: bold;
+    text-align: center;
+}
+#main_text{
+    width: 50%;
+    float: left; 
+}
+
+#prevent_pic{
+    width: 50%;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    background-color: #FCEE43;
+    padding: 5px;
+    font-family: Verdana;
+}
+
+nav ul{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 8px;
+    border-spacing: inherit;
+    border: 1px solid black;
+    padding: 4px;
+    background-color: white;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li:hover{
+    text-decoration: underline;
+    
+}
+
+
+
+
+
+
+
+
+footer{
+    clear: both;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: #FCEE43;
+    text-align: center;
+    font-family: Verdana;
+    height: 120px;
+    
+}
+
+footer ul{
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+    border-color: black;
+}
+
+footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin: 2px;
+    border-spacing: inherit;
+    background-color: white;
+    border: 1px solid black;
+}
+
+footer ul li:hover{
+    text-decoration: underline;
+}
+
+footer ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+footer p{
+    color: black;
+    text-decoration: underline;
+    
+}
+
+footer a{
+    text-decoration: underline;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 10px;  
+}
+
+#top{
+    margin-top: 10px;
+}
+
+#college_project{
+    color: red;
+}
+
+#symptoms h2{
+    text-align: left;
+}
+
+#causes h2{
+    text-align: left;
+}
