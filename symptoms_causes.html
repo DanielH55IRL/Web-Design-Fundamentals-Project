@@ -1,6 +1,6 @@
 <!doctype HTML>
 <!--Author - Daniel Halpin - S00199340
-	Date - 28/02/20
+	Date - 20/03/20
 	Page Description - Web Design Project - symptoms_causes.html
     
     ***Images from HSE and Public Health Ireland***
@@ -15,6 +15,26 @@
 	<title>COVID-19 Information</title>
 	<link rel="stylesheet" type="text/css" href="Styles/styles.css"/>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32"/> <!--Images from HSE and Public Health Ireland-->
+    
+    <!--Internal Styling as per Project Checklist-->
+<style> 
+table {
+  font-family: Verdana;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    
 </head>
     
 <body style="background-color: white">
@@ -28,8 +48,8 @@
         <nav>
         <ul>
             <li> <a href="index.html">Overview </a></li>    
-            <li id="active"><a href="symptoms_causes.html">Symptoms and Causes </a></li>
-            <li> <a href="treatment.html">Guidelines </a></li>
+            <li class="active"><a href="symptoms_causes.html">Symptoms and Causes </a></li>
+            <li> <a href="prevention.html">Guidelines </a></li>
             <li> <a href="more_info.html">More Info</a></li>
         </ul>
     </nav>
@@ -38,15 +58,17 @@
         
         
    <section id="main_content">
+       <h6>PLACE HOLDER TEXT DOESNT APPEAR ON WEBSITE - REMOVES WARNINGS ON VALIDATION</h6>
+       
        <section id="symptoms">
        <h2>Symptoms</h2>
        <ul>
-       <li>a cough - this can be any kind of cough, not just dry</li>
-           <br>
+           <li>a cough - this can be any kind of cough, not just dry</li>
+           
            <li>shortness of breath</li>
-           <br>
+           
            <li>breathing difficulties</li>
-           <br>
+           
            <li>fever (high temperature - 38 degrees Celsius or above) or chills</li>
        </ul>
            </section>
@@ -64,9 +86,9 @@
            <b>You could get the virus if you:</b>
            <br>
            <br>
-           Come into <b>close contact</b> with someone who has the virus and is <b>coughing</b> or <b>sneezing</b><br>
+           Come into <b>close contact</b> with someone who has the virus and is <b>coughing</b> or <b>sneezing</b>.<br>
            
-           <b>Touch surfaces</b> that someone who has the virus has <b>coughed</b> or <b>sneezed on</b><br>
+           <b>Touch surfaces</b> that someone who has the virus has <b>coughed</b> or <b>sneezed on</b>.<br>
            
            As it's a <b>new</b> illness, we do not know how easily the virus spreads from person to person.<br> 
            Spread is most likely from those who have symptoms.<br>
@@ -83,29 +105,9 @@
        
 <section id="table">  
     <h2>Latest Info</h2>
-<!--Internal Styling -->
-       <style> 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
        
-       
-       
-       <h4>Hospital Statistics (Republic of Ireland)</h4>
-    <p id="college_project">*As of 17/03/20</p>
+       <h4>Hospital Statistics (Republic of Ireland)</h4> <!--Data from Department of Health-->
+    <p class="college_project">*As of 17/03/20</p> <!--Example of College Project CSS being re-used to highlight other items-->
 
 <table>
   <tr>
@@ -116,7 +118,7 @@ tr:nth-child(even) {
   <tr>
     <td>Total number of cases</td>
     <td>350</td>
-    <td></td>
+    <td>-</td>
   </tr>
   <tr>
     <td>Total number hospitalised</td>
@@ -135,7 +137,7 @@ tr:nth-child(even) {
   </tr>
   <tr>
     <td>Case fatality rate</td>
-    <td></td>
+    <td>-</td>
     <td>0.6&#37;</td>
   </tr>
   <tr>
@@ -151,7 +153,7 @@ tr:nth-child(even) {
     <tr>
     <td>Median age</td>
     <td>43</td>
-    <td></td>
+    <td>-</td>
   </tr>
 </table>
     <br>
@@ -163,7 +165,7 @@ tr:nth-child(even) {
 
        <section id="global_data">
            <h3>Global Data and Map</h3>
-           <a href="https://www.bing.com/covid">Provided by Microsoft Bing</a>
+           <a href="https://www.bing.com/covid">Provided by Microsoft Bing</a><!--Map from Microsoft Bing-->
            <br>
            <br>
        <iframe id="global_map" src="https://www.bing.com/covid"></iframe>
@@ -182,11 +184,11 @@ tr:nth-child(even) {
         
            <footer>
                <a href="#top">Go to top of page</a>
-                <p id="college_project">***College Project***</p>
+                <p class="college_project">***College Project***</p>
              <ul>
               <li><a href="index.html">Overview </a></li>    
-            <li id="active"> <a href="symptoms_causes.html">Symptoms and Causes </a></li>
-            <li> <a href="treatment.html">Guidelines </a></li>
+            <li class="active"> <a href="symptoms_causes.html">Symptoms and Causes </a></li>
+            <li> <a href="prevention.html">Guidelines </a></li>
             <li> <a href="more_info.html">More Info</a></li>
              </ul>
                 <p>Copyright &copy; Daniel Halpin 2020</p>

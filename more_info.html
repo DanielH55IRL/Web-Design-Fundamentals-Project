@@ -1,6 +1,6 @@
 <!doctype HTML>
 <!--Author - Daniel Halpin - S00199340
-	Date - 28/02/20
+	Date - 20/03/20
 	Page Description - Web Design Project - more_info.html
     
     ***Images from HSE and Public Health Ireland***
@@ -10,7 +10,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="description" content="Home Page">
-	<meta name="keywords" content="Home Page, COVID-19, Coronavirus, SARS-nCOV-2, Pneumonia">
+	<meta name="keywords" content="Home Page, COVID-19, Coronavirus, SARS-nCOV-2, More Info, Find Out More, Health Advice, Contact Info">
 	<meta name="author" content="Daniel Halpin">
 	<title>COVID-19 Information</title>
 	<link rel="stylesheet" type="text/css" href="Styles/styles.css"/>
@@ -30,7 +30,7 @@
             <li> <a href="index.html">Overview </a></li>    
             <li>  <a href="symptoms_causes.html">Symptoms and Causes </a></li>
             <li> <a href="prevention.html">Guidelines </a></li>
-            <li id="active"> <a href="more_info.html">More Info</a></li>
+            <li class="active"> <a href="more_info.html">More Info</a></li>
         </ul>
     </nav>
         
@@ -38,6 +38,8 @@
         
         
    <section id="main_content">
+       <h6>PLACE HOLDER TEXT DOESNT APPEAR ON WEBSITE - REMOVES WARNINGS ON VALIDATION</h6>
+       
        <section id="more_info">
        <h2>More Info on COVID-19</h2>
        <p>Links to more sources of information on <b>COVID-19</b>:</p>
@@ -68,31 +70,24 @@
        
        <section id="video_info">
            <h3>Video's</h3>
-       <iframe id="prevent_video" src="https://www.youtube.com/embed/ztj7JhMt3Wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <iframe id="prevent_video" src="https://www.youtube.com/embed/ztj7JhMt3Wc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!--Video from Youtube by Department of Health-->
            
            <p>
-               Video from Department of Health:
+               Video from Department of Health (gov.ie):
                <br>
-               Showing how to help protect yourself from COVID-19.
+               <br>
+               Showing how to help protect yourself and others from COVID-19.
                <br>
            </p>
            
        </section>
-       <br>
-       <br><br>
-       <br><br>
-       <br><br>
-       <br><br>
-       <br><br>
-       <br><br>
-       <br><br>
-       <br><br>
-       <br><br>
+       
        
        <section id="contact_form">
        <h3>Contact for more Info:</h3>
             
-            <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+            <form action="http://year1.ccpdev.me/FormTest.php" method="post"> <!--Form links to http://year1.ccpdev.me/FormTest.php as per project checklist-->
             
                 <label for="first_name">First Name:<span class="required">*</span></label>
                 <input type="text" name="first_name" id="first_name" autofocus required>
@@ -107,11 +102,11 @@
                 <br>
                 <br>
                 
-                <label for="internet">Relation to:</label>
+                <label for="select">Relation to:</label>
                 
                 <fieldset>
                     
-                <input type="checkbox" id="COVID-19" name="COVID-19" value="COVID-19" checked>COVID-19
+                <input type="checkbox" id="select" name="COVID-19" value="COVID-19" checked>COVID-19
                     <br>
                     
                     <input type="checkbox" class="Testing" id="testing" name="Testing" value="Testing">Testing
@@ -143,12 +138,12 @@
         
            <footer>
                <a href="#top">Go to top of page</a>
-                <p id="college_project">***College Project***</p>
+                <p class="college_project">***College Project***</p>
              <ul>
               <li><a href="index.html">Overview </a></li>    
             <li> <a href="symptoms_causes.html">Symptoms and Causes </a></li>
-            <li> <a href="treatment.html">Guidelines </a></li>
-            <li id="active"> <a href="more_info.html">More Info</a></li>
+            <li> <a href="prevention.html">Guidelines </a></li>
+            <li class="active"> <a href="more_info.html">More Info</a></li>
              </ul>
                 <p>Copyright &copy; Daniel Halpin 2020</p>
            </footer>

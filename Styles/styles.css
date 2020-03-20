@@ -1,5 +1,25 @@
+/*       
+                                                    CSS for Web Design Fundamentals Project 2020 
+                                                    Project Topic: COVID-19
+                                                    Author: Daniel Halpin, S00199340
+                                                    
+Last Modified: 20/03/20
+*/
+
+
+/*
+Font family used for all content is Verdana.
+All pages aligned.
+Similar layout and colours used throughout all webpages.
+*/
+
+
+/*----------------------------------------*/
+/*-----Generic CSS Used for all Pages-----*/
+/*----------------------------------------*/
+
+/*-----Main Header for all Pages-----*/
 header{
-    
     border-bottom: 1px solid black;
     font-family: Verdana;
     font-weight: bold;
@@ -8,10 +28,12 @@ header{
     text-align: center;
 }
 
-#active{
+/*-----Active Page Marker, Shows user visually what page there on-----*/
+.active{
     background-color: #FCEE43;
 }
 
+/*-----Main Logo Pic shown on every page at top of page-----*/
 #logo_pic{
     width: 40%;
     height: 100px;
@@ -20,6 +42,7 @@ header{
     padding: 0px;
 }
 
+/*-----Main Content CSS, with viewport set to 50% so it takes up minimum 50% of the pages view-----*/
 #main_content{
     font-family: Verdana;
     color: black; 
@@ -27,22 +50,13 @@ header{
     min-height: 50vh;
 }
 
-#main_content h2{
-    font-weight: bold;
-    text-align: center;
-}
-#main_text{
-    width: 50%;
-    float: left; 
+
+#main_content h6{
+    font-size: 0px;
+    color: transparent;
 }
 
-#prevent_pic{
-    width: 50%;
-    float: right;
-    margin: 0px;
-    padding: 0px;
-}
-
+/*-----Navigation Bar shown on every page at top of page-----*/
 nav{
     background-color: #FCEE43;
     padding: 5px;
@@ -71,18 +85,12 @@ nav ul li a{
     font-weight: bold;
 }
 
+/*-----Underlines current selection while hovering over it, to visually show the user the selection-----*/
 nav ul li:hover{
-    text-decoration: underline;
-    
+    text-decoration: underline; 
 }
 
-
-
-
-
-
-
-
+/*-----Footer shown on every page at top of page-----*/
 footer{
     clear: both;
     padding: 0;
@@ -94,7 +102,6 @@ footer{
     text-align: center;
     font-family: Verdana;
     height: 160px;
-    
 }
 
 footer ul{
@@ -113,6 +120,7 @@ footer ul li{
     border: 1px solid black;
 }
 
+/*-----Underlines current selection while hovering over it, to visually show the user the selection-----*/
 footer ul li:hover{
     text-decoration: underline;
 }
@@ -138,13 +146,44 @@ footer a{
     padding: 10px;  
 }
 
+/*------------------------*/
+/*-----index.html CSS-----*/
+/*------------------------*/
+#main_text{
+    width: 50%;
+    float: left; 
+}
+
+#prevent_title{
+    text-align: center;
+}
+
+#prevent_pic{
+    width: 50%;
+    height: auto;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
 #top{
     margin-top: 10px;
 }
 
-#college_project{
+/*-----CSS Used to highlight College Project, reused for other parts where RED highlighting is needed-----*/
+.college_project{
     color: red;
+    font-weight: bold;
 }
+
+/*----------------------------------*/
+/*-----symptoms_causes.html CSS-----*/
+/*----------------------------------*/
+
+#symptoms ul li{
+    margin: 20px;
+}
+
 
 #symptoms{
     
@@ -176,10 +215,16 @@ footer a{
     height: 500px;
 }
 
+
+/*----------------------------*/
+/*-----more_info.html CSS-----*/
+/*----------------------------*/
+
 fieldset{
     width: 275px;
 }
 
+/*-----Makes required text highlight in BOLD Red-----*/
 .required{
     font-weight: bold;
     color: red;
@@ -220,14 +265,19 @@ input[type="checkbox"]{width:25px;}
 }
 
 #prevent_video{
-    width: 50%;
-    height: 250px;
+    width: 55%;
+    height: 315px;
     float: right;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    border: 0px;
 }
 #video_info{
     float: left;
     width: 100%;
     border-bottom: 1px solid black;
+}
+
+#contact_form{
+    margin-top: 475px;
 }
 
