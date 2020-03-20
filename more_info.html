@@ -1,0 +1,147 @@
+<!doctype HTML>
+<!--Author - Daniel Halpin - S00199340
+	Date - 28/02/20
+	Page Description - Web Design Project - more_info.html
+    
+    ***Images from HSE and Public Health Ireland***
+-->
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="Home Page">
+	<meta name="keywords" content="Home Page, COVID-19, Coronavirus, SARS-nCOV-2, Pneumonia">
+	<meta name="author" content="Daniel Halpin">
+	<title>COVID-19 Information</title>
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css"/>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32"/> <!--Images from HSE and Public Health Ireland-->
+</head>
+    
+<body style="background-color: white">
+    
+    <main>
+        <a id="pagetop"></a>
+	<header>
+        <h1>COVID-19 Information</h1>
+        <img id="logo_pic" src="Images/COVID_Backround.jpg" alt="Logo"> <!--Images from HSE and Public Health Ireland-->
+    </header>
+        <nav>
+        <ul>
+            <li> <a href="index.html">Overview </a></li>    
+            <li>  <a href="symptoms_causes.html">Symptoms and Causes </a></li>
+            <li> <a href="prevention.html">Guidelines </a></li>
+            <li id="active"> <a href="more_info.html">More Info</a></li>
+        </ul>
+    </nav>
+        
+        
+        
+        
+   <section id="main_content">
+       <section id="more_info">
+       <h2>More Info on COVID-19</h2>
+       <p>Links to more sources of information on <b>COVID-19</b>:</p>
+           <br>
+           <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public">World Health Organization (WHO)</a>
+           <br>
+           <br>
+           <a href="https://www2.hse.ie/conditions/coronavirus/coronavirus.html">Health Service Executive (HSE)</a>
+           <br>
+           <br>
+           <a href="https://www.gov.ie/en/campaigns/c36c85-covid-19-coronavirus/?referrer=/health-covid-19">Department of Health (gov.ie)</a>
+           <br>
+           <br>
+           <a href="https://www.ecdc.europa.eu/en/novel-coronavirus-china">European Centre for Disease Prevention and Control (ECDC)</a>
+           <br>
+           <br>
+           <a href="https://www.hpsc.ie/a-z/respiratory/coronavirus/novelcoronavirus/">Health Protection Surveilance Centre (HPSC)</a>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+       </section>
+       <br>
+       <br>
+    
+       
+       
+       <section id="video_info">
+           <h3>Video's</h3>
+       <iframe id="prevent_video" src="https://www.youtube.com/embed/ztj7JhMt3Wc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+           <p>
+               Video from Department of Health:
+               <br>
+               Showing how to help protect yourself from COVID-19.
+               <br>
+           </p>
+       </section>
+       
+       <section id="contact_form">
+       <h3>Contact for more Info:</h3>
+            
+            <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+            
+                <label for="first_name">First Name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required>
+                <br>
+                
+                <label for="last_name">Last Name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required>
+                <br>
+                
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="johndoe@gmail.com">
+                <br>
+                <br>
+                
+                <label for="internet">Relation to:</label>
+                
+                <fieldset>
+                    
+                <input type="checkbox" id="COVID-19" name="COVID-19" value="COVID-19" checked>COVID-19
+                    <br>
+                    
+                    <input type="checkbox" class="Testing" id="testing" name="Testing" value="Testing">Testing
+                    <br>
+                    
+                    <input type="checkbox" class="Prevention" id="prevention" name="Prevention" value="Prevention">Prevention
+                    <br>
+                
+                    <input type="checkbox" class="Other" id="others" name="Add" value="other">Other
+                    <br>
+                    
+                </fieldset>
+                
+                <br>
+                
+                <label for="message">Message (If applicable)</label>
+                
+                <textarea cols="40" rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea> <br>
+                
+                <input type="submit" name="submit" id="button" value="Submit">   
+            </form>
+       <p style="margin-left: 138px"><span class="required">*</span><em>indicates a required field</em></p>
+           <br>
+           <br>
+       </section>
+        </section> 
+
+    </main>
+        
+           <footer>
+               <a href="#top">Go to top of page</a>
+                <p id="college_project">***College Project***</p>
+             <ul>
+              <li><a href="index.html">Overview </a></li>    
+            <li> <a href="symptoms_causes.html">Symptoms and Causes </a></li>
+            <li> <a href="treatment.html">Guidelines </a></li>
+            <li id="active"> <a href="more_info.html">More Info</a></li>
+             </ul>
+                <p>Copyright &copy; Daniel Halpin 2020</p>
+           </footer>
+    
+    </body>
+    
+</html>
