@@ -3,7 +3,7 @@
                                                     Project Topic: COVID-19
                                                     Author: Daniel Halpin, S00199340
                                                     
-Last Modified: 20/03/20
+Last Modified: 18/04/20
 */
 
 
@@ -11,6 +11,7 @@ Last Modified: 20/03/20
 Font family used for all content is Verdana.
 All pages aligned.
 Similar layout and colours used throughout all webpages.
+All images used are from HSE, HPSC and Department of Health Websites.
 */
 
 
@@ -20,7 +21,6 @@ Similar layout and colours used throughout all webpages.
 
 /*-----Main Header for all Pages-----*/
 header{
-    border-bottom: 1px solid black;
     font-family: Verdana;
     font-weight: bold;
     margin: 0px;
@@ -35,7 +35,7 @@ header{
 
 /*-----Main Logo Pic shown on every page at top of page-----*/
 #logo_pic{
-    width: 40%;
+    width: 380px;
     height: 100px;
     float: inherit;
     margin: 0px;
@@ -47,10 +47,10 @@ header{
     font-family: Verdana;
     color: black; 
     position: relative;
-    min-height: 50vh;
+    min-height: 60vh;
 }
 
-
+/*-----Main Content H6 - Used as placeholder to remove validator warnings-----*/
 #main_content h6{
     font-size: 0px;
     color: transparent;
@@ -66,23 +66,25 @@ nav{
 nav ul{
     text-align: center;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 3px;
+    
 }
 
 nav ul li{
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     margin: 8px;
-    border-spacing: inherit;
     border: 1px solid black;
     padding: 4px;
     background-color: white;
+    
 }
 
 nav ul li a{
     color: black;
     text-decoration: none;
     font-weight: bold;
+    padding: 3px;
 }
 
 /*-----Underlines current selection while hovering over it, to visually show the user the selection-----*/
@@ -93,31 +95,32 @@ nav ul li:hover{
 /*-----Footer shown on every page at top of page-----*/
 footer{
     clear: both;
-    padding: 0;
+    padding: 10px;
     margin: 0;
-    position: relative;
+    position:inherit;
     bottom: 0px;
     width: 100%;
     background-color: #FCEE43;
     text-align: center;
     font-family: Verdana;
-    height: 160px;
+    height: 190px;
 }
 
 footer ul{
     text-align: center;
     font-size: 1.2em;
-    padding: 10px;
+    padding: 3px;
     border-color: black;
 }
 
 footer ul li{
     list-style-type: none;
-    display: inline;
-    margin: 2px;
+    display: inline-block;
+    margin: 8px;
     border-spacing: inherit;
     background-color: white;
     border: 1px solid black;
+    padding: 4px;
 }
 
 /*-----Underlines current selection while hovering over it, to visually show the user the selection-----*/
@@ -129,7 +132,8 @@ footer ul li a{
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 19px;
+    padding: 3px;
 }
 
 footer p{
@@ -138,10 +142,10 @@ footer p{
     
 }
 
-footer a{
+#footer_top{
     text-decoration: underline;
-    color: black;
-    font-size: 10px;
+    color: blueviolet;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px;  
 }
@@ -168,6 +172,8 @@ footer a{
 
 #top{
     margin-top: 10px;
+    font-family: Verdana;
+    font-size: 200px;
 }
 
 /*-----CSS Used to highlight College Project, reused for other parts where RED highlighting is needed-----*/
@@ -209,10 +215,15 @@ footer a{
 #table{
     border-bottom: 1px solid black;
 }
-
-#global_map{
+#hse_data{
     width: 100%;
-    height: 500px;
+    height: 100%;
+    font-family: Verdana;
+}
+
+#hse_map{
+    width: 100%;
+    height: 1000px;
 }
 
 
@@ -280,4 +291,47 @@ input[type="checkbox"]{width:25px;}
 #contact_form{
     margin-top: 475px;
 }
+
+/*-------------------------------------*/
+/*-----prevention_testing.html CSS-----*/
+/*-------------------------------------*/
+
+
+.col_prevent{
+    column-count: 3;
+    column-rule: 1px solid black;
+    column-gap: 50px;
+    font-family: Verdana;
+    width: 100%;
+    height: auto;
+    float: left;
+   
+    
+}
+
+#prevent_text{
+   
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 100%;
+    
+        
+}
+
+#basic_covid {
+    font-family: Verdana;
+    text-align: center;
+    float: none;
+}
+
+#prevention_pic{
+    width: 40%;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
